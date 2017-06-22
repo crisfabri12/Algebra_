@@ -34,7 +34,7 @@
 	<iostream>
 	<time.h>
 
-1498144336 source:c:\users\cristhian ocola\desktop\universidad\algebra\main.cpp
+1498147758 source:c:\users\cristhian ocola\desktop\universidad\algebra\main.cpp
 	<iostream>
 	<NTL/ZZ.h>
 	<string>
@@ -46,6 +46,8 @@
 	"gramal.h"
 	<time.h>
 	"Funciones Matematicas.h"
+	<stdio.h>
+	<math.h>
 
 1492655626 c:\users\cristhian ocola\desktop\universidad\algebra\include\rutas.h
 	<iostream>
@@ -97,7 +99,7 @@
 	<vector>
 	<NTL/ZZ.h>
 
-1498146457 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\rsa.cpp
+1498146513 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\rsa.cpp
 	"RSA.h"
 	"GA.h"
 	<iostream>
