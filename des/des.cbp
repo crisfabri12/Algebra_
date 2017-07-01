@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="des" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/des" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/des" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../Universidad/Algebra/include/Afin.h" />
+		<Unit filename="../Universidad/Algebra/include/Cesar.h" />
+		<Unit filename="../Universidad/Algebra/include/Funciones Matematicas.h" />
+		<Unit filename="../Universidad/Algebra/include/Funciones int.h" />
+		<Unit filename="../Universidad/Algebra/include/GA.h" />
+		<Unit filename="../Universidad/Algebra/include/RSA.h" />
+		<Unit filename="../Universidad/Algebra/include/Rutas.h" />
+		<Unit filename="../Universidad/Algebra/include/des .h" />
+		<Unit filename="../Universidad/Algebra/include/gramal.h" />
+		<Unit filename="../Universidad/Algebra/main.cpp" />
+		<Unit filename="../Universidad/Algebra/src/Afin.cpp" />
+		<Unit filename="../Universidad/Algebra/src/Cesar.cpp" />
+		<Unit filename="../Universidad/Algebra/src/Funciones Matematicas.cpp" />
+		<Unit filename="../Universidad/Algebra/src/Funciones int.cpp" />
+		<Unit filename="../Universidad/Algebra/src/GA.cpp" />
+		<Unit filename="../Universidad/Algebra/src/RSA.cpp" />
+		<Unit filename="../Universidad/Algebra/src/Rutas.cpp" />
+		<Unit filename="../Universidad/Algebra/src/des .cpp" />
+		<Unit filename="../Universidad/Algebra/src/gramal.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

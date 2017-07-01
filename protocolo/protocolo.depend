@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1498845227 source:c:\users\cristhian ocola\desktop\protocolo\main.cpp
+	<iostream>
+	"GA.h"
+	"Protocolo.h"
+	<time.h>
+	"Funciones Matematicas.h"
+
+1498795594 c:\users\cristhian ocola\desktop\protocolo\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1498870674 c:\users\cristhian ocola\desktop\protocolo\include\funciones matematicas.h
+	<vector>
+	<string>
+	"GA.h"
+	<iostream>
+	<stdlib.h>
+	<NTL/ZZ.h>
+	<sstream>
+	<NTL/ZZ.h>
+
+1498870710 source:c:\users\cristhian ocola\desktop\protocolo\src\funciones matematicas.cpp
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+	"GA.h"
+	<vector>
+
+1498795594 source:c:\users\cristhian ocola\desktop\protocolo\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1498869438 source:c:\users\cristhian ocola\desktop\protocolo\src\protocolo.cpp
+	"Protocolo.h"
+
+1498799364 c:\users\cristhian ocola\desktop\protocolo\include\protocolo.h
+	"GA.h"
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+	<string>
+
