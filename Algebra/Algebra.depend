@@ -34,7 +34,7 @@
 	<iostream>
 	<time.h>
 
-1498147758 source:c:\users\cristhian ocola\desktop\universidad\algebra\main.cpp
+1498799991 source:c:\users\cristhian ocola\desktop\universidad\algebra\main.cpp
 	<iostream>
 	<NTL/ZZ.h>
 	<string>
@@ -71,13 +71,13 @@
 1492667440 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\rutas.cpp
 	"Rutas.h"
 
-1496893768 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\funciones matematicas.cpp
+1498781906 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\funciones matematicas.cpp
 	"Funciones Matematicas.h"
 	<NTL/ZZ.h>
 	"GA.h"
 	<vector>
 
-1496893768 c:\users\cristhian ocola\desktop\universidad\algebra\include\funciones matematicas.h
+1498781429 c:\users\cristhian ocola\desktop\universidad\algebra\include\funciones matematicas.h
 	<vector>
 	<string>
 	"GA.h"
@@ -87,7 +87,7 @@
 	<sstream>
 	<NTL/ZZ.h>
 
-1495695510 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\ga.cpp
+1498532428 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\ga.cpp
 	"GA.h"
 	<iostream>
 	<time.h>
@@ -95,7 +95,7 @@
 	<stdlib.h>
 	<math.h>
 
-1495695510 c:\users\cristhian ocola\desktop\universidad\algebra\include\ga.h
+1498533108 c:\users\cristhian ocola\desktop\universidad\algebra\include\ga.h
 	<vector>
 	<NTL/ZZ.h>
 
@@ -404,7 +404,7 @@
 	<vector>
 	"Funciones Matematicas.h"
 
-1498091912 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\gramal.cpp
+1498801769 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\gramal.cpp
 	"gramal.h"
 	"GA.h"
 	<iostream>
@@ -412,4 +412,9 @@
 	<NTL/ZZ.h>
 	<sstream>
 	"Funciones Matematicas.h"
+
+1498780619 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\des .cpp
+	"des .h"
+
+1498780619 c:\users\cristhian ocola\desktop\universidad\algebra\include\des .h
 

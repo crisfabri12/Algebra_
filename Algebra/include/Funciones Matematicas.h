@@ -24,4 +24,9 @@ std::vector<bool> ZZtoBinary(ZZ num);
 ZZ stringTozz(string str);
 string zzToString(ZZ z);
 ZZ potenciaMod(ZZ n, ZZ m, ZZ mod);
+string rotarizquierda(string numero,int vueltas);
+ZZ des(int bits);
+string _48bits(string bits);
+string _56bits(string bits);
+
 #endif // FUNCIONES MATEMATICAS_H

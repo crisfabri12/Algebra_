@@ -367,40 +367,39 @@ while(true){
 }
 main()
 {
-    srand(time(NULL));
-    ifstream ficheroEntrada;
-    string mensaje;
-    ficheroEntrada.open ("entrada.txt",ios::out | ios::binary);
-    getline(ficheroEntrada,mensaje);
-    ficheroEntrada.close();
-    RSA s(16);
-    s.set_e2(stringTozz("19"));
-    s.set_n2(stringTozz("1961"));
-    s.set_d2(stringTozz("1675"));
-//    s.set_clavepublica(stringTozz("253"));
-//    s.set_N(stringTozz("34393"));
-//    s.set_claveprivada(stringTozz("2017"));
-    string encriptado = s.cifrar(mensaje,"g");
-    cout<<encriptado<<endl;
-    cout<<"----------------------------------"<<endl;
-
-    string original = s.descifrar(encriptado);
-    cout<<original;
-    ofstream ficherosalida;
-    ficherosalida.open ("salida.txt");
-    ficherosalida << original;
-    ficherosalida.close();
+////    srand(time(NULL));
+////    ifstream ficheroEntrada;
+////    string mensaje;
+////    ficheroEntrada.open ("entrada.txt",ios::out | ios::binary);
+////    getline(ficheroEntrada,mensaje);
+////    ficheroEntrada.close();
+////    RSA s(16);
+////    s.set_e2(stringTozz("19"));
+////    s.set_n2(stringTozz("1961"));
+////    s.set_d2(stringTozz("1675"));
+////    s.set_clavepublica(stringTozz("253"));
+////    s.set_N(stringTozz("34393"));
+////    s.set_claveprivada(stringTozz("2017"));
+////    string encriptado = s.cifrar(mensaje,"g");
+////    cout<<encriptado<<endl;
+////    cout<<"----------------------------------"<<endl;
+////
+////    string original = s.descifrar(encriptado);
+////    cout<<original;
+////    ofstream ficherosalida;
+////    ficherosalida.open ("salida.txt");
+////    ficherosalida << original;
+////    ficherosalida.close();
 //    implementElGamal();
-//    gamal r(512);
-//    ZZ e_1,e_2,p,c;
-//    e_1 = stringTozz("4123341997156703662481795929193273818156341704419873643684407880196374387953658668324927087005164878736873139715900902329806186136192910784175959299237068");
-//    e_2 = stringTozz("5772106229734278558933290561620091903222030418429026399712885064895227123102841659337611265435432352577264064758017831430676714624204057741472980116566210");
-//    p = stringTozz("8246683994313407324963591858386547636312683408839747287368815760392748775907317336649854174010329757473746279431801804659612372272385821568351918598474137");
-//    gamal s(e_1,e_2,p);
-//    string cifrado = s.cifrar("hola que tal");
-//    cout<<cifrado<<endl;
-//    string original = r.descifrar(cifrado);
-//    cout<<original;
-
+    gamal r(512);
+    ZZ e_1,e_2,p,c;
+    e_1 = stringTozz("4123341997156703662481795929193273818156341704419873643684407880196374387953658668324927087005164878736873139715900902329806186136192910784175959299237068");
+    e_2 = stringTozz("5772106229734278558933290561620091903222030418429026399712885064895227123102841659337611265435432352577264064758017831430676714624204057741472980116566210");
+    p = stringTozz("8246683994313407324963591858386547636312683408839747287368815760392748775907317336649854174010329757473746279431801804659612372272385821568351918598474137");
+    gamal s(e_1,e_2,p);
+    string cifrado = s.cifrar("h");
+    cout<<cifrado<<endl;
+    string original = r.descifrar(cifrado);
+    cout<<original;
 
 };

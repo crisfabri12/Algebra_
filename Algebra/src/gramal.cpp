@@ -169,8 +169,6 @@ string gamal::cifrar(string mensaje)
         inicio+=numMaxofChars;
     }
     return MensajeDes;
-
-
 }
 void gamal::set_e1(ZZ e1)
 {

@@ -21,6 +21,20 @@ vector<bool> ZZtoBinary(ZZ num){
     }
     return binario;
 }
+ZZ potenciacion(ZZ a, ZZ b){
+	ZZ m, temp;
+	ZZ res;
+	res = conv<ZZ>("1");
+	m = b;
+	while(m != 0){
+		if (m == b) temp = a;
+		else temp *= temp;
+		if (ntlModulo(m, to_ZZ(2)) == 1)
+			res *= temp;
+		m/=2;
+	}
+	return res;
+}
 ZZ potenciaMod(ZZ n, ZZ m, ZZ mod){
     if(n>mod)
         n=modulo(n,mod);
@@ -205,6 +219,89 @@ int PHI_euler(int num){
     return resultado;
 }
 
+
+vector<bool> permu56(vector<bool> bits){
+    vector<bool> respuesta;
+    int tabla_predefinida[56] = {57,49,41,33,25,17,9,1,57,50,42,34,26,18,10,2,59,57,43,35,27,19,11,3,60,52,44,36,63,55,47,39,31,23,15,7,62,54,46,38,30,22,14,6,61,53,45,37,29,21,13,5,28,20,12,4};
+    for(int i = 0; i < 56; i++){
+        respuesta.push_back(bits[tabla_predefinida[i]-1]);
+    }
+    return respuesta;
+}
+
+vector<bool> permu48(vector<bool> bits){
+    vector<bool> respuesta;
+    int tabla_predefinida[48] = {14,17,11,24,1,5,3,28,15,6,21,10,23,19,12,4,26,8,16,7,27,20,13,2,41,52,31,37,47,55,30,40,51,41,33,48,44,49,39,56,34,53,46,42,50,36,29,32};
+    for(int i = 0; i < 48; i++){
+        respuesta.push_back(bits[tabla_predefinida[i]-1]);
+    }
+    return respuesta;
+}
+
+vector<bool> rotarizquierda(vector<bool> num, int vueltas)
+{
+    bool temp;
+    for(int j = vueltas; j > 0; j--)
+    {
+        for(int i = 0; i < num.size() - 1; i++)
+        {
+            temp = num[i];
+            num[i] = num[i + 1];
+            num[i + 1] = temp;
+        }
+    }
+    return num;
+}
+
+vector<bool> subvec(vector<bool> numero,int posicion, int numeros){
+    vector <bool> resultado;
+    for(int i = 0; i < numeros; i++){
+        resultado.push_back(numero[posicion]);
+        posicion++;
+    }
+    return resultado;
+}
+
+vector<bool> unir(vector<bool> A, vector<bool> B){
+    vector<bool>C;
+    for(int i = 0; i < A.size(); i++){
+        C.push_back(A[i]);
+    }
+    for(int j = 0; j < B.size(); j++){
+        C.push_back(B[j]);
+    }
+    return C;
+}
+
+ZZ des(int bits){
+    vector<bool> digitos = ga2(11,bits,3,3);
+    int vueltas[] = {1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1};
+    vector<bool> actual;
+    for(int j = 0; j < bits; j+=64){
+        vector<bool> temp;
+        temp = (permu56(subvec(digitos,j,64)));
+        actual = unir(actual,temp);
+    }
+    for(int k = 0; k < 16; k++){
+        vector<bool> vec_56bits;
+        vector<bool> vec_48bits;
+        for(int l = 0; l < actual.size(); l+=56){
+            vector<bool> c = rotarizquierda(subvec(actual,l,28),vueltas[k]);
+            vector<bool> d = rotarizquierda(subvec(actual,l+28,28),vueltas[k]);
+            vec_56bits = unir(vec_56bits, unir(c,d));
+            vec_48bits = unir(vec_48bits,permu48(unir(c,d)));
+        }
+        if(vec_48bits[vec_48bits.size()-1] == 0){
+            vec_48bits[vec_48bits.size()-1] = 1;
+        }
+        ZZ resultado = convertir_decimal(vec_48bits,vec_48bits.size());
+        if(ProbPrime(resultado,10)){
+            return resultado;
+        }
+        actual = vec_56bits;
+    }
+    return des(bits);
+}
 
 
 

@@ -49,6 +49,7 @@
 		<Unit filename="include/GA.h" />
 		<Unit filename="include/RSA.h" />
 		<Unit filename="include/Rutas.h" />
+		<Unit filename="include/des .h" />
 		<Unit filename="include/gramal.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Afin.cpp" />
@@ -58,6 +59,7 @@
 		<Unit filename="src/GA.cpp" />
 		<Unit filename="src/RSA.cpp" />
 		<Unit filename="src/Rutas.cpp" />
+		<Unit filename="src/des .cpp" />
 		<Unit filename="src/gramal.cpp" />
 		<Extensions>
 			<code_completion />
